@@ -1,0 +1,7 @@
+.coverage
+.mypy_cache/
+.pytest_cache/
+.vscode/
+env/
+.venv
+.DS_Store
