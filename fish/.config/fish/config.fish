@@ -37,3 +37,11 @@ set -g theme_display_ruby no
 alias kc "kubectl"
 alias g "git"
 alias chmox "chmod -x"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
+# <<< conda initialize <<<
+
+# Google Cloud SDK
+source (brew --prefix)"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"

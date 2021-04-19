@@ -72,13 +72,15 @@ if ! fgrep -q "${BREW_PREFIX}/bin/fish" /etc/shells; then
   chsh -s "${BREW_PREFIX}/bin/fish";
 fi;
 
+# copy config.example
+mkdir -p ~/.ssh && cp ssh/config.example ~/.ssh/config.example
+
 # create ln
 stow editor
 stow --no-folding -d fish/  .config -t ~/.config/
 stow git
-stow ssh
 stow tmux
 
-# # Set macOS preferences
-# # We will run this last because this will reload the shell
-# source mac/configuration.sh
+# Set macOS preferences
+# We will run this last because this will reload the shell
+source mac/configuration.sh

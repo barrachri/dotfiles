@@ -11,3 +11,10 @@ Install omf theme
 ```
 omf install scorphish
 ```
+
+## To update brew packages
+
+```
+brew bundle dump
+```
+
