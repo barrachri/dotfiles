@@ -1,6 +1,8 @@
 # Set brew path
 set -gx PATH /opt/homebrew/bin $PATH
 
+starship init fish | source
+
 # Start tmux
 if status is-interactive
 and not set -q TMUX
