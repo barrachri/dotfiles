@@ -3,6 +3,19 @@ set -gx PATH /opt/homebrew/bin $PATH
 
 starship init fish | source
 
+# LibPQ (PostgreSQL)
+fish_add_path /opt/homebrew/opt/libpq/bin
+set -gx LDFLAGS "-L/opt/homebrew/opt/libpq/lib"
+set -gx CPPFLAGS "-I/opt/homebrew/opt/libpq/include"
+set -gx PKG_CONFIG_PATH "/opt/homebrew/opt/libpq/lib/pkgconfig"
+
+
+# Openssl
+fish_add_path /opt/homebrew/opt/openssl@3/bin
+set -gx LDFLAGS "-L/opt/homebrew/opt/openssl@3/lib"
+set -gx CPPFLAGS "-I/opt/homebrew/opt/openssl@3/include"
+set -gx PKG_CONFIG_PATH "/opt/homebrew/opt/openssl@3/lib/pkgconfig"
+
 # Start tmux
 if status is-interactive
 and not set -q TMUX
