@@ -77,7 +77,7 @@ mkdir -p ~/.ssh && cp ssh/config.example ~/.ssh/config.example
 
 # create ln
 stow editor
-stow --no-folding -d fish/  .config -t ~/.config/
+stow --no-folding -d fish/ .config -t ~/.config/
 stow git
 stow tmux
 

@@ -1,21 +1,13 @@
 [alias]
 
 	co = checkout
-
 	cm = commit
-
 	st = status
-
 	lg = log --graph --full-history --all --color --pretty=format:"%x2b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
-
 	count   = !git shortlog -sn
-
 	unstage = reset HEAD --
-
 	undo = reset --soft HEAD~1
-
 	changelog = log --pretty=%s --first-parent
-
 	delete-merged = "!f() { \
 		git checkout --quiet master \
 		&& \
@@ -237,3 +229,5 @@
 	name = Christian Barra
 	email = me@christianbarra.com
 
+[init]
+	defaultBranch = main
