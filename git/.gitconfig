@@ -237,5 +237,3 @@
 	process = git-lfs filter-process --skip
 	required = true
 
-[includeIf "gitdir:~/Projects/parloa/"]
-    path = ~/Projects/parloa/.gitconfig
