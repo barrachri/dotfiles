@@ -66,20 +66,27 @@ brew bundle
 # Cleanup
 brew cleanup
 
-# Switch to using brew-installed fish as default shell
-if ! fgrep -q "${BREW_PREFIX}/bin/fish" /etc/shells; then
-  echo "${BREW_PREFIX}/bin/fish" | sudo tee -a /etc/shells;
-  chsh -s "${BREW_PREFIX}/bin/fish";
+# Switch to using brew-installed zsh as default shell
+if ! fgrep -q "${BREW_PREFIX}/bin/zsh" /etc/shells; then
+  echo "${BREW_PREFIX}/bin/zsh" | sudo tee -a /etc/shells;
+  chsh -s "${BREW_PREFIX}/bin/zsh";
 fi;
+
+# Install Oh My Zsh if not already installed
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+  echo "Installing Oh My Zsh..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+fi
 
 # copy config.example
 mkdir -p ~/.ssh && cp ssh/config.example ~/.ssh/config.example
 
 # create ln
 stow editor
-stow --no-folding -d fish/ .config -t ~/.config/
 stow git
-stow tmux
+stow zsh
+stow -d kitty/ -t ~/.config/kitty/ .
+stow -d starship/ -t ~/.config/ .
 
 # Set macOS preferences
 # We will run this last because this will reload the shell

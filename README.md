@@ -6,11 +6,6 @@ cd dotfiles
 ./run.sh
 ```
 
-Install omf theme
-
-```
-omf install scorphish
-```
 
 ## To update brew packages
 
