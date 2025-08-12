@@ -5,55 +5,74 @@
 ### Tabs
 
 #### Creating Tabs
-- **New Tab**: `Cmd + T`
-- **New Tab with Same Directory**: `Cmd + Alt + T`
+- **New Tab (with current directory)**: `Cmd + T`
+- **Set Tab Title**: `Cmd + Alt + T`
 
 #### Navigating Tabs
-- **Next Tab**: `Cmd + Shift + ]` or `Ctrl + Tab`
-- **Previous Tab**: `Cmd + Shift + [` or `Ctrl + Shift + Tab`
+- **Next Tab**: `Cmd + Right Arrow`
+- **Previous Tab**: `Cmd + Left Arrow`
 - **Go to Tab N**: `Cmd + 1` through `Cmd + 9` (for tabs 1-9)
-- **Go to Last Tab**: `Cmd + 9` (if you have more than 9 tabs)
-- **Move Tab Forward**: `Cmd + Shift + .`
-- **Move Tab Backward**: `Cmd + Shift + ,`
+- **Move Tab Forward**: `Cmd + .`
+- **Move Tab Backward**: `Cmd + ,`
 
 #### Closing Tabs
-- **Close Tab**: `Cmd + W`
+- **Close Tab**: `Cmd + Q`
 
 ### Windows (Splits)
 
 #### Creating Windows
-- **New Window (Horizontal Split)**: `Cmd + Enter`
-- **New Window (Vertical Split)**: `Cmd + Shift + Enter`
-- **New OS Window**: `Cmd + N`
+- **New Window (with current directory)**: `Cmd + Enter`
+- **New OS Window (with current directory)**: `Cmd + N`
 
 #### Navigating Windows
 - **Next Window**: `Cmd + ]`
 - **Previous Window**: `Cmd + [`
-- **Move to Window Above**: `Cmd + K` then `↑`
-- **Move to Window Below**: `Cmd + K` then `↓`
-- **Move to Window Left**: `Cmd + K` then `←`
-- **Move to Window Right**: `Cmd + K` then `→`
+- **Move to Window Above**: `Ctrl + K`
+- **Move to Window Below**: `Ctrl + J`
+- **Move to Window Left**: `Ctrl + H`
+- **Move to Window Right**: `Ctrl + L`
+- **Move Window Forward**: `Cmd + F`
+- **Move Window Backward**: `Cmd + B`
+- **Move Window to Top**: `Cmd + \``
 
-#### Window Layout
-- **Next Layout**: `Cmd + Shift + L`
-- **Toggle Fullscreen for Active Window**: `Cmd + Shift + F`
-- **Resize Window**: Hold `Cmd + R` then use arrow keys
+#### Window Management
+- **Start Resizing Window**: `Cmd + R`
+- **Close Window**: `Cmd + W`
 
-#### Closing Windows
-- **Close Window**: `Cmd + Shift + W`
+### Layout Management
+- **Next Layout**: `Cmd + L`
+- **Toggle Stack Layout**: `Cmd + Z`
 
-### Other Useful Shortcuts
-
-- **Increase Font Size**: `Cmd + +`
+### Font Sizes
+- **Increase Font Size**: `Cmd + =`
 - **Decrease Font Size**: `Cmd + -`
 - **Reset Font Size**: `Cmd + 0`
+
+### Clipboard
 - **Copy**: `Cmd + C`
 - **Paste**: `Cmd + V`
-- **Clear Terminal**: `Cmd + K` (or `Ctrl + L`)
-- **Scroll Up**: `Cmd + ↑` or `Page Up`
-- **Scroll Down**: `Cmd + ↓` or `Page Down`
+- **Paste from Selection**: `Cmd + S` or `Shift + Insert`
+
+### Scrolling
+- **Scroll Line Up**: `Cmd + K`
+- **Scroll Line Down**: `Cmd + J`
+- **Scroll Page Up**: `Cmd + Page Up`
+- **Scroll Page Down**: `Cmd + Page Down`
 - **Scroll to Top**: `Cmd + Home`
 - **Scroll to Bottom**: `Cmd + End`
+- **Show Scrollback**: `Cmd + H`
+
+### Miscellaneous
+- **Toggle Fullscreen**: `Cmd + F11`
+- **Toggle Maximized**: `Cmd + F10`
+- **Unicode Input**: `Cmd + U`
+- **Edit Config File**: `Cmd + F2`
+- **Kitty Shell**: `Cmd + Escape`
+- **Increase Background Opacity**: `Cmd + A` then `M`
+- **Decrease Background Opacity**: `Cmd + A` then `L`
+- **Set Background Opacity to 100%**: `Cmd + A` then `1`
+- **Reset Background Opacity to Default**: `Cmd + A` then `D`
+- **Clear Terminal**: `Cmd + Delete`
 
 ## Custom Configuration
 
