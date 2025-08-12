@@ -6,8 +6,8 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 
 # Editor
-export EDITOR='code --wait'
-export VISUAL='code --wait'
+export EDITOR='vim'
+export VISUAL='vim'
 
 # Language
 export LANG=en_US.UTF-8

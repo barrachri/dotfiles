@@ -64,8 +64,8 @@ setopt SHARE_HISTORY
 
 # Environment variables
 export LANG=en_US.UTF-8
-export EDITOR='code --wait'
-export VISUAL='code --wait'
+export EDITOR='vim'
+export VISUAL='vim'
 
 # Python (uv)
 # UV manages Python versions and packages
