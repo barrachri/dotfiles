@@ -190,3 +190,6 @@ extract() {
 
 # Load local config if it exists
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+# opencode
+export PATH=/Users/christianbarra/.opencode/bin:$PATH
